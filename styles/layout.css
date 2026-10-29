@@ -1,18 +1,244 @@
-* {
-  box-sizing: border-box;
-}
 
 body {
-  width: 1440px;
-  margin: 0 auto;
-
-  background-color: #16304b;
-
-  font-family: "IBM Plex Mono";
-  color: #f1e2cf;
+    min-width: 320px;
 }
 
-h1 {
-  font-size: 80px;
-  font-weight: 700;
+.site {
+    max-width: 1440px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.first {
+    height: 800px;
+    padding: 90px 95px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.first-text {
+    width: 48%;
+}
+
+.main-flower {
+    width: 48%;
+}
+
+.city {
+    height: 790px;
+    padding: 95px;
+    position: relative;
+}
+
+.city-moon {
+    position: absolute;
+    width: 297px;
+    right: 0;
+    top: 30px;
+}
+
+.two-cards {
+    display: flex;
+    gap: 110px;
+    width: 84%;
+    margin: 95px auto 0;
+    position: relative;
+    z-index: 1;
+}
+
+.city-card {
+    width: 50%;
+}
+
+.gardens {
+    height: 840px;
+    padding: 105px 95px 100px;
+}
+
+.garden-cards {
+    display: flex;
+    gap: 30px;
+    margin-top: 77px;
+}
+
+.garden-card {
+    width: 33.33%;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+}
+
+.garden-card small {
+    margin-top: auto;
+}
+
+.evenings {
+    height: 760px;
+    padding: 130px 95px 80px;
+    position: relative;
+}
+
+.evening-moon {
+    width: 399px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.evenings > h2,
+.evenings > h3 {
+    position: relative;
+}
+
+.evening-cards {
+    display: flex;
+    gap: 23px;
+    margin-top: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+.evening-card {
+    width: 25%;
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+}
+
+.evening-card b {
+    margin-top: auto;
+}
+
+.visit {
+    height: 690px;
+    padding: 95px;
+    position: relative;
+}
+
+.visit-moon {
+    width: 596px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.visit-cards {
+    display: flex;
+    gap: 35px;
+    width: 56%;
+    margin-top: 65px;
+    position: relative;
+    z-index: 1;
+}
+
+.visit-card {
+    width: 50%;
+}
+
+footer {
+    min-height: 980px;
+    padding: 75px 95px 110px;
+}
+
+.invitation {
+    height: 427px;
+    margin-top: 125px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.invitation-left {
+    width: 35%;
+}
+
+.invitation img {
+    position: absolute;
+    width: 52%;
+    left: 24%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.invitation-right {
+    width: 27%;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .first {
+        height: auto;
+        padding: 60px 25px;
+        flex-direction: column;
+    }
+
+    .first-text,
+    .main-flower {
+        width: 100%;
+    }
+
+    .city,
+    .gardens,
+    .evenings,
+    .visit {
+        height: auto;
+        padding: 70px 25px;
+    }
+
+    .two-cards,
+    .garden-cards,
+    .evening-cards,
+    .visit-cards {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .city-card,
+    .garden-card,
+    .evening-card,
+    .visit-card {
+        width: 100%;
+    }
+
+    .city-moon,
+    .evening-moon,
+    .visit-moon {
+        position: static;
+        width: 220px;
+    }
+
+    .garden-card,
+    .evening-card {
+        height: auto;
+        min-height: 260px;
+    }
+
+    footer {
+        min-height: auto;
+        padding: 60px 25px;
+    }
+
+    .invitation {
+        height: 300px;
+        margin-top: 80px;
+        padding: 20px;
+    }
+
+    .invitation-left {
+        width: 45%;
+    }
+
+    .invitation-right {
+        width: 35%;
+    }
+
+    .invitation img {
+        width: 52%;
+        left: 24%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
